@@ -1,0 +1,16 @@
+name: upper-build
+
+on:
+    push:
+        paths: 
+            - ".github/workflows/upper-build.yml"
+            - "upper/**"
+    workflow_dispatch: # manual
+
+jobs:
+    # You can have multiple jobs and names
+    build:
+        runs-on: ubuntu-latest
+        steps: 
+            - run: go version
+            
