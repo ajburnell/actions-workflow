@@ -1,0 +1,21 @@
+name: api-build
+
+on:
+  push:
+    # Restrict what launches the build on push by paths.
+    paths:
+      - ".github/workflows/api-build.yml"
+      - "api/**"
+  # Allows manual trigger good for learning.
+  workflow_dispatch: #manual
+
+jobs:
+  build:
+    name: build-dotnet-api
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: dotnet --list-runtimes
+      - run: dotnet --list-sdks
+      - run: dotnet build
+        working-directory: "./api"
