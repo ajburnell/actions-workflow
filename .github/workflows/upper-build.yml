@@ -16,7 +16,7 @@ jobs:
             # Specify a particular Go version...
             # https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
             # https://github.com/actions/runner-images/blob/main/images/ubuntu/toolsets/toolset-2204.json
-            - run: "actions/checkout@v4"
+            - uses: "actions/checkout@v4"
             - run: pwd && ls -al
             - uses: "actions/setup-go@v5"
               with:
