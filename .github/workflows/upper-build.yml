@@ -10,7 +10,7 @@ on:
 jobs:
     # You can have multiple jobs and names
     build:
-        runs-on: pi
+        runs-on: ubuntu-latest
         steps: 
             - run: pwd && ls -al
             # Specify a particular Go version...
