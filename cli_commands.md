@@ -23,3 +23,10 @@ gh workflow list --repo <specify repo>
 # https://github.com/actions/runner-images/blob/main/images/ubuntu/toolsets/toolset-2204.json
 # https://github.com/marketplace/actions/setup-go-environment
 # https://github.com/marketplace
+
+
+# List and delete a cache
+# https://github.com/ajburnell/actions-workflow/actions/caches
+gh cache list
+
+gh cache delete -h

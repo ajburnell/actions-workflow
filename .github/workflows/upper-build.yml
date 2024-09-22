@@ -10,7 +10,7 @@ on:
 jobs:
     # You can have multiple jobs and names
     build:
-        runs-on: ubuntu-latest
+        runs-on: pi
         steps: 
             - run: pwd && ls -al
             # Specify a particular Go version...
@@ -22,6 +22,8 @@ jobs:
               with:
                 # go-version: '1.22'
                 go-version-file: ./upper/go.mod
+                # Dependencies for caching to speed up future actions.
+                # https://github.com/ajburnell/actions-workflow/actions/caches
                 cache-dependency-path: ./upper/go.sum
             # https://github.com/marketplace/actions/setup-go-environment
             # https://github.com/marketplace
