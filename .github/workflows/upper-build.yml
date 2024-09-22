@@ -24,3 +24,10 @@ jobs:
             # https://github.com/marketplace/actions/setup-go-environment
             # https://github.com/marketplace
             - run: go version
+            # Inline multi line script. Caution the indentation!
+            - run: |
+                ls
+                go build
+                ls
+                go test
+                ./upper foo the bar
