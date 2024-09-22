@@ -22,9 +22,10 @@ jobs:
               with:
                 # go-version: '1.22'
                 go-version-file: ./upper/go.mod
+                cache-dependency-path: ./upper/go.sum
             # https://github.com/marketplace/actions/setup-go-environment
             # https://github.com/marketplace
-            - run: go version
+            - run: go mod download
             # Inline multi line script. Caution the indentation!
             - run: |
                 ls
