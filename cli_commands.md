@@ -17,3 +17,9 @@ git remote -v
 
 # Avoid the above by specifying
 gh workflow list --repo <specify repo>
+
+# Useful web links
+# https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
+# https://github.com/actions/runner-images/blob/main/images/ubuntu/toolsets/toolset-2204.json
+# https://github.com/marketplace/actions/setup-go-environment
+# https://github.com/marketplace
