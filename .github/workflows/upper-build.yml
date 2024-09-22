@@ -20,7 +20,8 @@ jobs:
             - run: pwd && ls -al
             - uses: "actions/setup-go@v5"
               with:
-                go-version: '1.22'
+                # go-version: '1.22'
+                go-version-file: ./upper/go.mod
             # https://github.com/marketplace/actions/setup-go-environment
             # https://github.com/marketplace
             - run: go version
