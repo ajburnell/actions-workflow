@@ -26,6 +26,7 @@ jobs:
             # https://github.com/marketplace/actions/setup-go-environment
             # https://github.com/marketplace
             - run: go mod download
+              working-directory: upper
             # Inline multi line script. Caution the indentation!
             - run: |
                 ls
